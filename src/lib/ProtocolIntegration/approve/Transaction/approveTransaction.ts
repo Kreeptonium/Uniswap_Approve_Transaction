@@ -9,7 +9,7 @@ import {IApproveDataModel} from "../Model/approveDataModel";
 dotenv.config();
 
 //Accessing UniswapV3Router contract's ABI
-const UniswapV3ERC20ABI = require('../../../../../../abi/Uniswap/V3/UniswapERC20ABI.json');
+const UniswapV3ERC20ABI = require('../../../abi/UniswapERC20ABI.json');
 let receiptPromise: Promise<TransactionReceipt>;
 
 export const ApproveAsync = async(approveDataModel:IApproveDataModel) : Promise<any>=> {
